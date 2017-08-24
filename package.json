@@ -2,8 +2,8 @@
     "name": "nova",
     "displayName": "NOVA",
     "description": "Nova snippets",
-    "version": "0.0.1",
-    "publisher": "malame",
+    "version": "0.0.2",
+    "publisher": "mitchlamers",
     "engines": {
         "vscode": "^1.15.0"
     },
