@@ -1,0 +1,66 @@
+{
+    "import from framework": {
+        "prefix": "framework",
+        "body": [
+            "import {${2:entities}} from 'nova.universe.framework';$0"
+        ],
+        "description": "import statement from framework"
+    },
+    "import": {
+        "prefix": "import",
+        "body": [
+            "import {${2:entities}} from '$1';$0"
+        ],
+        "description": "import statement from framework"
+    },
+    "create test describe()": {
+        "prefix": "describe",
+        "body": [
+            "describe('$1', () => {",
+            "   it('$2', () => {",
+            "       $3",
+            "   });",
+            "});"
+        ],
+        "description": "create test suite"
+    },
+    "create test it()": {
+        "prefix": "it",
+        "body": [
+            "it('$1', () => {",
+            "   $2",
+            "});"
+        ],
+        "description": "create test it()"
+    },
+    "create component": {
+        "prefix": "component",
+        "body": [
+            "import { Component } from '@angular/core';",
+            "",
+            "@Component({",
+            "   selector: '$1',",
+            "   templateUrl: '$2',",
+            "})",
+            "",
+            "export class $3Component {",
+            "   $4",
+            "}",
+            ""
+        ],
+        "description": "create component"
+    },
+    "create service": {
+        "prefix": "service",
+        "body": [
+            "import { Injectable } from '@angular/core';",
+            "",
+            "@Injectable()",
+            "export class $1Service {",
+            "   $2",
+            "}",
+            ""
+        ],
+        "description": "create service"
+    }
+}

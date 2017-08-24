@@ -1,0 +1,21 @@
+{
+    "name": "nova",
+    "displayName": "NOVA",
+    "description": "Nova snippets",
+    "version": "0.0.1",
+    "publisher": "malame",
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
